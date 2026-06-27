@@ -16,8 +16,12 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="text-2xl tracking-wider" style={{  }}>
-            <img src="/images/WebLogo.png" alt="Divout Logo" />
+          <div className="flex items-center">
+            <img
+              src="/images/WebLogo.png"
+              alt="Divout Logo"
+              className="h-10 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
