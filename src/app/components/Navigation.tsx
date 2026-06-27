@@ -16,7 +16,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="text-2xl tracking-wider" style={{ fontFamily: 'var(--font-primary)', fontWeight: 700, color: '#FFFFFF' }}>
+          <div className="text-2xl tracking-wider" style={{  }}>
             <img src="/images/WebLogo.png" alt="Divout Logo" />
           </div>
 
