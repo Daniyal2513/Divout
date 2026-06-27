@@ -18,8 +18,8 @@ export function Navigation() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-2xl tracking-wider" style={{ fontFamily: 'var(--font-primary)', fontWeight: 700, color: '#FFFFFF' }}>
-            <img src="/images/WebLogo.png" alt="Divout Logo" />
           </div>
+            <img src="/images/WebLogo.png" alt="Divout Logo" />
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
