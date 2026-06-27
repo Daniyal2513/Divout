@@ -17,11 +17,13 @@ export function Navigation() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <img
-              src="/images/WebLogo.png"
-              alt="Divout Logo"
-              className="h-10 w-auto"
-            />
+            <a href="#" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+              <img
+                src="/images/WebLogo.png"
+                alt="Divout Logo"
+                className="h-10 w-auto cursor-pointer"
+              />
+            </a>
           </div>
 
           {/* Desktop Navigation */}
