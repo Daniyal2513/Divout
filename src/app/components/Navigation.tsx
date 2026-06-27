@@ -18,7 +18,7 @@ export function Navigation() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-2xl tracking-wider" style={{ fontFamily: 'var(--font-primary)', fontWeight: 700, color: '#FFFFFF' }}>
-            DIVOUT
+            <img src="/images/WebLogo.png" alt="Divout Logo" />
           </div>
 
           {/* Desktop Navigation */}
