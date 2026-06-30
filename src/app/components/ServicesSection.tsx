@@ -45,7 +45,13 @@ export function ServicesSection() {
       title: 'Video Production',
       description: 'High-quality, end-to-end video creation services tailored to tell your story and captivate your audience.',
       features: ['Scriptwriting & Storyboarding', '4K Cinematic Filming', 'Professional Editing & VFX', 'Motion Graphics']
-    }
+    },
+    {
+      icon: Code,
+      title: 'POS System',
+      description: 'Fast and reliable point-of-sale solution for restaurants and retail stores',
+      features: ['Billing & Invoicing', 'Inventory Management', 'Sales Reporting', 'Multi-Device Support']
+    },
   ];
 
   return (

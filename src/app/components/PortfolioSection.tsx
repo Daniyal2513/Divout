@@ -49,6 +49,12 @@ export function PortfolioSection() {
       category: 'Production',
       description: 'Award-winning fintech mobile experience',
       color: 'from-[#0068fa]/100 to-transparent'
+    },
+    {
+      title: 'POS System',
+      category: 'Software',
+      description: 'Fast and reliable point-of-sale solution for restaurants and retail stores',
+      color: 'from-[#0068fa]/100 to-transparent'
     }
   ];
 
