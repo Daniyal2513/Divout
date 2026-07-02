@@ -5,6 +5,8 @@ import { ServicesSection } from './components/ServicesSection';
 import { PortfolioSection } from './components/PortfolioSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import { ContactSection } from './components/ContactSection';
+import { CursorGlow } from "./components/Cursorglow";
+
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
       <PortfolioSection />
       <TestimonialsSection />
       <ContactSection />
+      <CursorGlow />
+
     </div>
   );
 }
