@@ -27,7 +27,7 @@ export default function CursorGlow() {
   return (
     <div
       ref={glowRef}
-      className="pointer-events-none fixed z-[9999] w-[400px] h-[400px] rounded-full -translate-x-1/2 -translate-y-1/2"
+      className="pointer-events-none fixed z-[9999] w-[200px] h-[200px] rounded-full -translate-x-1/2 -translate-y-1/2"
       style={{
         background:
           "radial-gradient(circle, rgba(101, 163, 248, 0.14) , transparent 70%)",
