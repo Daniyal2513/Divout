@@ -39,6 +39,12 @@ export function PortfolioSection() {
       color: 'from-[#0068fa]/100 to-transparent'
     },
     {
+      title: 'CRM Development',
+      category: 'Software',
+      description: 'Custom CRM development for businesses in Pakistan — customer management, sales tracking, and automated reporting built to streamline operations and improve customer relationships.',
+      color: 'from-[#0068fa]/100 to-transparent'
+    },
+    {
       title: 'Mobile App Design',
       category: 'UI/UX',
       description: 'Award-winning fintech mobile experience',
@@ -95,7 +101,7 @@ export function PortfolioSection() {
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
               className="group relative rounded-2xl p-8 aspect-[4/3] cursor-pointer [clip-path:inset(0_round_1rem)]"
-              >
+            >
               <div
                 className={`absolute inset-0 bg-gradient-to-br from-[#0a0a0a] to-[#1a1a1a] border border-[#ffffff]/12 transition-transform duration-500 ${hoveredIndex === index ? 'scale-110' : 'scale-100'
                   }`}
@@ -147,8 +153,8 @@ export function PortfolioSection() {
               {/* Animated Border */}
               <motion.div
                 className="absolute inset-0 border-2 border-[#65A3F8]/50  rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"
-                animate={hoveredIndex === index }
-                // transition={{ repeat: Infinity, duration: 1.5 }}
+                animate={hoveredIndex === index}
+              // transition={{ repeat: Infinity, duration: 1.5 }}
               />
             </motion.div>
           ))}

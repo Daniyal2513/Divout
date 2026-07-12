@@ -29,7 +29,7 @@ export function ServicesSection() {
     },
     {
       icon: Bot,
-      title: 'CRM Development',
+        title: 'CRM Development',
       description: 'Custom CRM software development for small and medium businesses in Pakistan — manage customers, sales, and operations in one system.',
       features: ['Customer Management', 'Sales Tracking', 'Business Automation', 'Custom Dashboards']
     },
