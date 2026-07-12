@@ -12,7 +12,7 @@ export function ServicesSection() {
     {
       icon: Code,
       title: 'Web Development',
-      description: 'High-performance, scalable web applications built with modern technologies and best practices.',
+      description: 'Custom website development and web application development in Karachi, Pakistan — built with modern technologies for restaurants, retail, and growing businesses.',
       features: ['Custom Websites', 'Web Apps', 'E-commerce', 'CMS Solutions']
     },
     {
@@ -29,6 +29,12 @@ export function ServicesSection() {
     },
     {
       icon: Bot,
+      title: 'CRM Development',
+      description: 'Custom CRM software development for small and medium businesses in Pakistan — manage customers, sales, and operations in one system.',
+      features: ['Customer Management', 'Sales Tracking', 'Business Automation', 'Custom Dashboards']
+    },
+    {
+      icon: Bot,
       title: 'AI Voice Order Bot',
       description: 'Revolutionary AI-powered voice ordering system that transforms customer interactions with natural, intelligent conversations.',
       features: ['Natural Language Processing', '24/7 Automation', 'Multi-language Support', 'Real-time Analytics'],
@@ -37,7 +43,7 @@ export function ServicesSection() {
     {
       icon: Code,
       title: 'App Development',
-      description: 'Custom mobile and web applications built with cutting-edge technology to scale your business and engage users.',
+      description: 'Custom app development for iOS and Android — mobile applications built to scale your business and engage customers across Pakistan.',
       features: ['iOS & Android Apps', 'Full-Stack Web Dev', 'UI/UX Design', 'Cloud Integration']
     },
     {
@@ -49,7 +55,7 @@ export function ServicesSection() {
     {
       icon: Code,
       title: 'POS System',
-      description: 'Fast and reliable point-of-sale solution for restaurants and retail stores',
+      description: 'Custom POS system development for restaurants and clothing stores in Pakistan — fast, reliable point-of-sale software with inventory and sales management.',
       features: ['Billing & Invoicing', 'Inventory Management', 'Sales Reporting', 'Multi-Device Support']
     },
   ];
@@ -76,8 +82,7 @@ export function ServicesSection() {
             Our Services
           </h2>
           <p className="max-w-3xl mx-auto text-lg text-white/80 leading-relaxed" style={{ fontFamily: 'var(--font-secondary)' }}>
-            Comprehensive digital solutions combining creative excellence with cutting-edge technology
-          </p>
+            Custom POS systems, CRM software, web development, and app development for businesses across Pakistan</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
