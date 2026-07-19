@@ -131,20 +131,25 @@ export function TestimonialsSection() {
             </button>
 
             {/* Dots */}
-            <div className="flex gap-2" role="tablist" aria-label="Testimonials">
-              {testimonials.map((_, index) => (
-                <button
-                  key={index}
-                  type="button"
-                  onClick={() => setCurrentIndex(index)}
-                  role="tab"
-                  aria-label={`Go to testimonial ${index + 1}`}
-                  aria-selected={index === currentIndex}
-                  className={`w-2 h-2 rounded-full transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#65A3F8] ${index === currentIndex ? 'bg-[#65A3F8] w-8' : 'bg-white/20'
-                    }`}
-                />
-              ))}
-            </div>
+            <div className="flex gap-1" role="tablist" aria-label="Testimonials">
+    {testimonials.map((_, index) => (
+      <button
+        key={index}
+        type="button"
+        onClick={() => setCurrentIndex(index)}
+        role="tab"
+        aria-label={`Go to testimonial ${index + 1}`}
+        aria-selected={index === currentIndex}
+        className="p-3 flex items-center justify-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#65A3F8]"
+      >
+        <span
+          className={`block rounded-full transition-all ${
+            index === currentIndex ? 'bg-[#65A3F8] w-8 h-2' : 'bg-white/20 w-2 h-2'
+          }`}
+        />
+      </button>
+    ))}
+  </div>
 
             <button
               type="button"
