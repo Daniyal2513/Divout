@@ -200,12 +200,11 @@ export function ContactSection() {
                 </div>
               </div>
             </div>
-
             <div className="pt-8 border-t border-white/20">
               <h4 className="mb-4" style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}>Follow Us</h4>
               <div className="flex gap-4">
                 {[
-                  { icon: Linkedin, label: 'LinkedIn', href: '#' },
+                  { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/company/YOUR-PAGE' },
                   { icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61590566043442' },
                   { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/divoutproduction/' }
                 ].map((social, i) => (
@@ -215,52 +214,51 @@ export function ContactSection() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={social.label}
+                    className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-[#65A3F8] transition-all group border border-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#65A3F8]"
                   >
-
-                    <button
-                      className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-[#65A3F8] transition-all group border border-white/20"
-                    >
-                      <social.icon className="text-white/80 group-hover:text-white transition-colors" size={20} />
-                    </button>
+                    <social.icon
+                      className="text-white/80 group-hover:text-white transition-colors"
+                      size={20}
+                      aria-hidden="true"
+                    />
                   </a>
-
                 ))}
-              </div>
             </div>
-
-            <div className="bg-gradient-to-br from-[#65A3F8]/20 to-transparent border border-[#65A3F8]/30 rounded-2xl p-6 backdrop-blur-sm">
-              <h4 className="mb-3" style={{ fontFamily: 'var(--font-primary)', fontWeight: 700, fontSize: '1.25rem' }}>
-                Ready to Start?
-              </h4>
-              <p className="text-white/80 mb-4" style={{ fontFamily: 'var(--font-secondary)' }}>
-                Schedule a free consultation call with our team to discuss your project requirements and goals.
-              </p>
-              <button className="bg-white text-black px-6 py-3 rounded-full hover:bg-white/90 transition-all" style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}>
-                Book a Call
-              </button>
-            </div>
-          </motion.div>
         </div>
 
-        {/* Footer */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="pt-12 border-t border-white/20 text-center"
-        >
-          <div className="text-3xl mb-4" style={{ fontFamily: 'var(--font-primary)', fontWeight: 900 }}>
-            DIVOUT
-          </div>
-          <p className="text-white/60 mb-4" style={{ fontFamily: 'var(--font-secondary)' }}>
-            Pioneering the future of digital innovation
+        <div className="bg-gradient-to-br from-[#65A3F8]/20 to-transparent border border-[#65A3F8]/30 rounded-2xl p-6 backdrop-blur-sm">
+          <h4 className="mb-3" style={{ fontFamily: 'var(--font-primary)', fontWeight: 700, fontSize: '1.25rem' }}>
+            Ready to Start?
+          </h4>
+          <p className="text-white/80 mb-4" style={{ fontFamily: 'var(--font-secondary)' }}>
+            Schedule a free consultation call with our team to discuss your project requirements and goals.
           </p>
-          <p className="text-white/40 text-sm" style={{ fontFamily: 'var(--font-secondary)' }}>
-            © 2026 DIVOUT. All rights reserved.
-          </p>
-        </motion.div>
-      </div>
-    </section>
+          <button className="bg-white text-black px-6 py-3 rounded-full hover:bg-white/90 transition-all" style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}>
+            Book a Call
+          </button>
+        </div>
+      </motion.div>
+    </div>
+
+        {/* Footer */ }
+  <motion.div
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.8 }}
+    className="pt-12 border-t border-white/20 text-center"
+  >
+    <div className="text-3xl mb-4" style={{ fontFamily: 'var(--font-primary)', fontWeight: 900 }}>
+      DIVOUT
+    </div>
+    <p className="text-white/60 mb-4" style={{ fontFamily: 'var(--font-secondary)' }}>
+      Pioneering the future of digital innovation
+    </p>
+    <p className="text-white/40 text-sm" style={{ fontFamily: 'var(--font-secondary)' }}>
+      © 2026 DIVOUT. All rights reserved.
+    </p>
+  </motion.div>
+      </div >
+    </section >
   );
 }
