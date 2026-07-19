@@ -122,30 +122,37 @@ export function TestimonialsSection() {
           {/* Navigation */}
           <div className="flex items-center justify-center gap-4 mt-8">
             <button
+              type="button"
               onClick={prevTestimonial}
-              className="w-12 h-12 bg-[#0a0a0a] rounded-full border border-white/20 flex items-center justify-center hover:bg-[#65A3F8] hover:border-[#65A3F8] transition-all group"
+              aria-label="Previous testimonial"
+              className="w-12 h-12 bg-[#0a0a0a] rounded-full border border-white/20 flex items-center justify-center hover:bg-[#65A3F8] hover:border-[#65A3F8] transition-all group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#65A3F8]"
             >
-              <ChevronLeft className="text-white group-hover:text-black transition-colors" size={24} />
+              <ChevronLeft className="text-white group-hover:text-black transition-colors" size={24} aria-hidden="true" />
             </button>
 
             {/* Dots */}
-            <div className="flex gap-2">
+            <div className="flex gap-2" role="tablist" aria-label="Testimonials">
               {testimonials.map((_, index) => (
                 <button
                   key={index}
+                  type="button"
                   onClick={() => setCurrentIndex(index)}
-                  className={`w-2 h-2 rounded-full transition-all ${
-                    index === currentIndex ? 'bg-[#65A3F8] w-8' : 'bg-white/20'
-                  }`}
+                  role="tab"
+                  aria-label={`Go to testimonial ${index + 1}`}
+                  aria-selected={index === currentIndex}
+                  className={`w-2 h-2 rounded-full transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#65A3F8] ${index === currentIndex ? 'bg-[#65A3F8] w-8' : 'bg-white/20'
+                    }`}
                 />
               ))}
             </div>
 
             <button
+              type="button"
               onClick={nextTestimonial}
-              className="w-12 h-12 bg-[#0a0a0a] rounded-full border border-white/20 flex items-center justify-center hover:bg-[#65A3F8] hover:border-[#65A3F8] transition-all group"
+              aria-label="Next testimonial"
+              className="w-12 h-12 bg-[#0a0a0a] rounded-full border border-white/20 flex items-center justify-center hover:bg-[#65A3F8] hover:border-[#65A3F8] transition-all group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#65A3F8]"
             >
-              <ChevronRight className="text-white group-hover:text-black transition-colors" size={24} />
+              <ChevronRight className="text-white group-hover:text-black transition-colors" size={24} aria-hidden="true" />
             </button>
           </div>
         </div>
