@@ -45,7 +45,7 @@ function AnimatedCounter({ value, prefix = '', suffix = '', decimals = 0, durati
 export function HeroSection() {
   return (
     <>
-     
+
       <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-[#0a0a14] to-black relative overflow-hidden pt-20">
         {/* Abstract Background Elements */}
         <div className="absolute inset-0 opacity-30">
@@ -90,15 +90,19 @@ export function HeroSection() {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <a href="#contact">
-                  <button className="bg-[#65A3F8] text-black px-8 py-4 rounded-full hover:bg-[#5593e8] transition-all hover:scale-105 hover:shadow-xl hover:shadow-[#65A3F8]/30" style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}>
-                    Start Your Journey
-                  </button>
+                <a
+                  href="#contact"
+                  className="inline-block bg-[#65A3F8] text-black px-8 py-4 rounded-full hover:bg-[#5593e8] transition-all hover:scale-105 hover:shadow-xl hover:shadow-[#65A3F8]/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#65A3F8]"
+                  style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}
+                >
+                  Start Your Journey
                 </a>
-                <a href="#portfolio">
-                  <button className="bg-transparent text-white px-8 py-4 rounded-full border-2 border-white hover:bg-white hover:text-black transition-all" style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}>
-                    View Our Work
-                  </button>
+                <a
+                  href="#portfolio"
+                  className="inline-block bg-transparent text-white px-8 py-4 rounded-full border-2 border-white hover:bg-white hover:text-black transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#65A3F8]"
+                  style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}
+                >
+                  View Our Work
                 </a>
               </div>
 
@@ -216,8 +220,8 @@ export function HeroSection() {
               </motion.div>
             </motion.div>
           </div>
-        </div>
-      </section>
+        </div >
+      </section >
     </>
   );
 }
