@@ -199,10 +199,6 @@ export function ContactSection() {
                     <div className="text-white/80" style={{ fontFamily: 'var(--font-secondary)' }}>PK Block A Shehzad Raza Street<br />Karachi, Pakistan</div>
                     <div className="text-white/80" style={{ fontFamily: 'var(--font-secondary)' }}>PA Philadelphia, PA,USA</div>
                   </div>
-                  <div>
-                    <div className="mb-1" style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}>Office</div>
-                    <div className="text-white/80" style={{ fontFamily: 'var(--font-secondary)' }}>Philadelphia, PA,USA</div>
-                  </div>
                 </div>
               </div>
             </div>
