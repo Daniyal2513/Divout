@@ -186,6 +186,7 @@ export function ContactSection() {
                   <div>
                     <div className="mb-1" style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}>Phone</div>
                     <div className="text-white/80" style={{ fontFamily: 'var(--font-secondary)' }}>+92 (330) 9042354</div>
+                    <div className="text-white/80" style={{ fontFamily: 'var(--font-secondary)' }}>+92 (330) 9042354</div>
                   </div>
                 </div>
 
