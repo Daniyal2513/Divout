@@ -185,12 +185,8 @@ export function ContactSection() {
                   </div>
                   <div>
                     <div className="mb-1" style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}>Phone</div>
-                    <div className="text-white/80" style={{ fontFamily: 'var(--font-secondary)' }}>+92 (330) 9042354</div>
-                    <div className="text-white/80" style={{ fontFamily: 'var(--font-secondary)' }}>346 657 1348</div>
-                  </div>
-                  <div>
-                    <div className="mb-1" style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}>Phone</div>
-                    <div className="text-white/80" style={{ fontFamily: 'var(--font-secondary)' }}>346 657 1348</div>
+                    <div className="text-white/80" style={{ fontFamily: 'var(--font-secondary)' }}>PK +92 (330) 9042354</div>
+                    <div className="text-white/80" style={{ fontFamily: 'var(--font-secondary)' }}>PA +1 (346) 657-1348</div>
                   </div>
                 </div>
 
@@ -200,7 +196,8 @@ export function ContactSection() {
                   </div>
                   <div>
                     <div className="mb-1" style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}>Office</div>
-                    <div className="text-white/80" style={{ fontFamily: 'var(--font-secondary)' }}>Block A Shehzad Raza Street<br />Karachi, Pakistan</div>
+                    <div className="text-white/80" style={{ fontFamily: 'var(--font-secondary)' }}>PK Block A Shehzad Raza Street<br />Karachi, Pakistan</div>
+                    <div className="text-white/80" style={{ fontFamily: 'var(--font-secondary)' }}>PA Philadelphia, PA,USA</div>
                   </div>
                   <div>
                     <div className="mb-1" style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}>Office</div>
