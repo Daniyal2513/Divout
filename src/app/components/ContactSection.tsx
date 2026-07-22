@@ -17,7 +17,7 @@ export function ContactSection() {
     setStatus('submitting');
 
     try {
-      const response = await fetch('https://divout-6v3i.vercel.app/api/contact', {
+      const response = await fetch('divout-78g6.vercel.app/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
