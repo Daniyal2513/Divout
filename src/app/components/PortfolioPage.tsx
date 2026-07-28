@@ -3,7 +3,7 @@ import PortfolioHoverCard from './PortfolioHoverCard';
 // Yahan apne clients ki list add karein
 const clients = [
   {
-    image: "/images/client1-fullpage.png",
+    image: "/images/WebLogo.png",
     siteName: "clientwebsite.com",
     imageHeight: 2400,
   },
