@@ -1,9 +1,14 @@
+"use client";
 import { motion } from 'motion/react';
 import { ExternalLink, ArrowUpRight } from 'lucide-react';
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 export function PortfolioSection() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+    const navigate = useNavigate(); // ← ye line add karein
+
+
 
   const projects = [
     {
@@ -167,7 +172,7 @@ export function PortfolioSection() {
           transition={{ duration: 0.8 }}
           className="text-center mt-12"
         >
-          <button className="inline-flex items-center gap-2 bg-transparent text-white px-8 py-4 rounded-full border-2 border-white hover:bg-white hover:text-black transition-all" style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}>
+          <button onClick={() => navigate('/PortfolioHoverCard')} className="inline-flex items-center gap-2 bg-transparent text-white px-8 py-4 rounded-full border-2 border-white hover:bg-white hover:text-black transition-all" style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}>
             View Full Portfolio
             <ExternalLink size={18} />
           </button>

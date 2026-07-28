@@ -1,3 +1,4 @@
+import { Routes, Route } from "react-router-dom";
 import { Navigation } from './components/Navigation';
 import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
@@ -7,6 +8,7 @@ import { TestimonialsSection } from './components/TestimonialsSection';
 import { ContactSection } from './components/ContactSection';
 import CursorGlow from "./components/Cursorglow";
 import { Helmet } from "react-helmet-async"
+import PortfolioHoverCard from './components/PortfolioHoverCard';
 
 export default function App() {
   return (
@@ -31,6 +33,9 @@ export default function App() {
         <CursorGlow />
 
       </div>
+      <Routes>
+        <Route path="/portfolio" element={<PortfolioHoverCard image="" siteName="" imageHeight={0} />} />
+      </Routes>
     </>
   );
 }
