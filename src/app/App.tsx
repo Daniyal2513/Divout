@@ -8,7 +8,7 @@ import { TestimonialsSection } from './components/TestimonialsSection';
 import { ContactSection } from './components/ContactSection';
 import CursorGlow from "./components/Cursorglow";
 import { Helmet } from "react-helmet-async"
-import PortfolioHoverCard from './components/PortfolioHoverCard';
+import PortfolioPage from "./components/PortfolioPage";
 
 export default function App() {
   return (
@@ -35,7 +35,7 @@ export default function App() {
       </div>
       <Routes>
         <Route path="/" element={<HeroSection />} />
-        <Route path="/Portfolio" element={<PortfolioHoverCard />} />
+        <Route path="/Portfolio" element={<PortfolioPage />} />
       </Routes>
     </>
   );
