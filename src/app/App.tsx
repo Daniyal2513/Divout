@@ -34,7 +34,8 @@ export default function App() {
 
       </div>
       <Routes>
-        <Route path="/Portfolio" element={<PortfolioHoverCard image="" siteName="" imageHeight={0} />} />
+        <Route path="/" element={<HeroSection />} />
+        <Route path="/Portfolio" element={<PortfolioHoverCard />} />
       </Routes>
     </>
   );
