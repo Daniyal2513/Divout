@@ -7,11 +7,11 @@ const clients = [
     siteName: "clientwebsite.com",
     imageHeight: 2400,
   },
-  {
-    image: "/images/client2-fullpage.png",
-    siteName: "clientwebsite2.com",
-    imageHeight: 3000,
-  },
+//   {
+//     image: "/images/client2-fullpage.png",
+//     siteName: "clientwebsite2.com",
+//     imageHeight: 3000,
+//   },
   // ... baaki clients yahan add karte jayein
 ];
 
