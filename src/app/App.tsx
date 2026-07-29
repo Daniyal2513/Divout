@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import PortfolioPage from "./components/PortfolioPage";
 import { Navigation } from './components/Navigation';
 import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
@@ -8,7 +9,6 @@ import { TestimonialsSection } from './components/TestimonialsSection';
 import { ContactSection } from './components/ContactSection';
 import CursorGlow from "./components/Cursorglow";
 import { Helmet } from "react-helmet-async"
-import PortfolioPage from "./components/PortfolioPage";
 
 export default function App() {
   return (
@@ -28,15 +28,14 @@ export default function App() {
         <AboutSection />
         <ServicesSection />
         <PortfolioSection />
+      <Routes>
+        <Route path="/Portfolio" element={<PortfolioPage />} />
+      </Routes>
         <TestimonialsSection />
         <ContactSection />
         <CursorGlow />
 
       </div>
-      <Routes>
-        <Route path="/" element={<HeroSection />} />
-        <Route path="/Portfolio" element={<PortfolioPage />} />
-      </Routes>
     </>
   );
 }
