@@ -1,3 +1,4 @@
+// 
 import { Routes, Route } from "react-router-dom";
 import PortfolioPage from "./components/PortfolioPage";
 import { Navigation } from './components/Navigation';
@@ -9,6 +10,21 @@ import { TestimonialsSection } from './components/TestimonialsSection';
 import { ContactSection } from './components/ContactSection';
 import CursorGlow from "./components/Cursorglow";
 import { Helmet } from "react-helmet-async"
+
+function HomePage() {
+  return (
+    <div className="min-h-screen bg-black">
+      <Navigation />
+      <HeroSection />
+      <AboutSection />
+      <ServicesSection />
+      <PortfolioSection />
+      <TestimonialsSection />
+      <ContactSection />
+      <CursorGlow />
+    </div>
+  );
+}
 
 export default function App() {
   return (
@@ -22,20 +38,11 @@ export default function App() {
         <meta property="og:url" content="https://www.divout.site" />
         <link rel="canonical" href="https://www.divout.site" />
       </Helmet>
-      <div className="min-h-screen bg-black">
-        <Navigation />
-        <HeroSection />
-        <AboutSection />
-        <ServicesSection />
-        <PortfolioSection />
-      <Routes>
-        <Route path="/Portfolio" element={<PortfolioPage />} />
-      </Routes>
-        <TestimonialsSection />
-        <ContactSection />
-        <CursorGlow />
 
-      </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
+      </Routes>
     </>
   );
 }
