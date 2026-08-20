@@ -41,7 +41,7 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/portfolio" element={<PortfolioPage />} />
+        {/* <Route path="/portfolio" element={<PortfolioPage />} /> */}
       </Routes>
     </>
   );
