@@ -3,24 +3,24 @@ import { Palette, Code, Camera, Search, Bot, Sparkles } from 'lucide-react';
 
 export function ServicesSection() {
   const services = [
-    {
-      icon: Palette,
-      title: 'Visual Identity',
-      description: 'Stunning visual identities, UI/UX design, and brand experiences that captivate and convert.',
-      features: ['Brand Identity', 'UI/UX Design', 'Graphic Design', 'Motion Graphics']
-    },
+    // {
+    //   icon: Palette,
+    //   title: 'Visual Identity',
+    //   description: 'Stunning visual identities, UI/UX design, and brand experiences that captivate and convert.',
+    //   features: ['Brand Identity', 'UI/UX Design', 'Graphic Design', 'Motion Graphics']
+    // },
     {
       icon: Code,
       title: 'Web Development',
       description: 'Custom website development and web application development in Karachi, Pakistan — built with modern technologies for restaurants, retail, and growing businesses.',
-      features: ['Custom Websites', 'Web Apps', 'E-commerce', 'CMS Solutions']
+      features: ['Custom Websites', 'Web Apps', 'E-commerce', 'CMS Solutions','Responsive Design','UI/UX Design']
     },
-    {
-      icon: Camera,
-      title: 'Photography',
-      description: 'Professional product and commercial photography that showcases your brand in the best light.',
-      features: ['Product Photography', 'Commercial Shoots', 'Brand Photography', 'Post-Production']
-    },
+    // {
+    //   icon: Camera,
+    //   title: 'Photography',
+    //   description: 'Professional product and commercial photography that showcases your brand in the best light.',
+    //   features: ['Product Photography', 'Commercial Shoots', 'Brand Photography', 'Post-Production']
+    // },
     {
       icon: Search,
       title: 'SEO & Marketing',
@@ -46,12 +46,12 @@ export function ServicesSection() {
       description: 'Custom app development for iOS and Android — mobile applications built to scale your business and engage customers across Pakistan.',
       features: ['iOS & Android Apps', 'Full-Stack Web Dev', 'UI/UX Design', 'Cloud Integration']
     },
-    {
-      icon: Sparkles,
-      title: 'Video Production',
-      description: 'High-quality, end-to-end video creation services tailored to tell your story and captivate your audience.',
-      features: ['Scriptwriting & Storyboarding', '4K Cinematic Filming', 'Professional Editing & VFX', 'Motion Graphics']
-    },
+    // {
+    //   icon: Sparkles,
+    //   title: 'Video Production',
+    //   description: 'High-quality, end-to-end video creation services tailored to tell your story and captivate your audience.',
+    //   features: ['Scriptwriting & Storyboarding', '4K Cinematic Filming', 'Professional Editing & VFX', 'Motion Graphics']
+    // },
     {
       icon: Code,
       title: 'POS System',

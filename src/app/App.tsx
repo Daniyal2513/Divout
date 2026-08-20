@@ -1,6 +1,6 @@
 // 
 import { Routes, Route } from "react-router-dom";
-import PortfolioPage from "./components/PortfolioPage";
+// import PortfolioPage from "./components/PortfolioPage";
 import { Navigation } from './components/Navigation';
 import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
@@ -18,7 +18,7 @@ function HomePage() {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
-      <PortfolioSection />
+      {/* <PortfolioSection /> */}
       <TestimonialsSection />
       <ContactSection />
       <CursorGlow />
