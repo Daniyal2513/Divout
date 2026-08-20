@@ -291,7 +291,7 @@ export function ContactSection() {
           {/* <div className="text-3xl mb-4" style={{ fontFamily: 'var(--font-primary)', fontWeight: 900 }}>
       DIVOUT
     </div> */}
-          <div className="flex items-center">
+          <div className="flex items-center justify-center mb-4 gap-2">
             <a href="#" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <img
                 src="/images/WebLogo.png"
