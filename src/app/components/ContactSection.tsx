@@ -1,7 +1,31 @@
 import { motion } from 'motion/react';
 import { Mail, Phone, MapPin, Send, Linkedin, Twitter, Instagram, Facebook } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+function BarkWidget() {
+  useEffect(() => {
+    if (document.querySelector('script[src*="widgets-v2"]')) return;
 
+    const script = document.createElement('script');
+    script.src = 'https://www.bark.com/assets/js/frontend-v2/widgets-v2.cb50c44cc046721f95f89a25ecee28fd.v2.js';
+    script.defer = true;
+    document.body.appendChild(script);
+  }, []);
+
+  return (
+    
+      href="https://www.bark.com/en/us/company/divout-production/J3lP0m/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bark-widget"
+      data-type="pro"
+      data-id="J3lP0m"
+      data-image="medium-navy"
+      data-version="3.0"
+    >
+      Divout Production
+    </a>
+  );
+}
 export function ContactSection() {
   const [formData, setFormData] = useState({
     name: '',
@@ -11,6 +35,17 @@ export function ContactSection() {
   });
 
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+  const BarkIcon = ({ size = 20, className = "" }: { size?: number; className?: string }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className={className}
+  >
+    <img src="/bark icon.png" alt="Bark" className="w-5 h-5" />
+  </svg>
+);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -204,11 +239,11 @@ export function ContactSection() {
             </div>
             <div className="pt-8 border-t border-white/20">
               <h4 className="mb-4" style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}>Follow Us</h4>
-              <div className="flex gap-4">
+              <div className="flex gap-4 items-center">
                 {[
                   { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/company/YOUR-PAGE' },
                   { icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61590566043442' },
-                  { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/divoutproduction/' }
+                  { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/divoutproduction/' },
                 ].map((social, i) => (
                   <a
                     key={i}
@@ -225,6 +260,8 @@ export function ContactSection() {
                     />
                   </a>
                 ))}
+                    <BarkWidget />
+
             </div>
         </div>
 
