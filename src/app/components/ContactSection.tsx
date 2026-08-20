@@ -44,7 +44,7 @@ export function ContactSection() {
     fill="currentColor"
     className={className}
   >
-    <img src="/images/bark icon.png" alt="Bark" className="w-5 h-5" />
+    <img src="/images/bark icon.png" alt="Bark" className="w-15 h-15" />
   </svg>
 );
 
