@@ -242,8 +242,8 @@ export function ContactSection() {
               <h4 className="mb-4" style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}>Follow Us</h4>
               <div className="flex gap-4 items-center">
                 {[
-                  { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/company/YOUR-PAGE' },
-                  { icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61590566043442' },
+                  { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/divout-production-971a66418/' },
+                  { icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61590974293100' },
                   { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/divoutproduction/' },
                 ].map((social, i) => (
                   <a
