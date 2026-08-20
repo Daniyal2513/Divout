@@ -22,7 +22,7 @@ function BarkWidget() {
       data-image="medium-navy"
       data-version="3.0"
     >
-  <img src="/bark icon.png" alt="Bark" className="w-5 h-5" />
+  <img src="/images/bark icon.png" alt="Bark" className="w-5 h-5" />
 
     </a>
   );
@@ -44,7 +44,7 @@ export function ContactSection() {
     fill="currentColor"
     className={className}
   >
-    <img src="/bark icon.png" alt="Bark" className="w-5 h-5" />
+    <img src="/images/bark icon.png" alt="Bark" className="w-5 h-5" />
   </svg>
 );
 
