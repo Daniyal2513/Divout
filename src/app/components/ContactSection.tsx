@@ -16,13 +16,13 @@ function BarkWidget() {
       href="https://www.bark.com/en/us/company/divout-production/J3lP0m/"
       target="_blank"
       rel="noopener noreferrer"
-      className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-[#65A3F8] transition-all group border border-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#65A3F8]"
+      className="w-22 h-22 bg-white/10 rounded-xl flex items-center justify-center hover:bg-[#65A3F8] transition-all group border border-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#65A3F8]"
       data-type="pro"
       data-id="J3lP0m"
       data-image="medium-navy"
       data-version="3.0"
     >
-  <img src="/images/bark icon.png" alt="Bark" className="w-30 h-30" />
+  <img src="/images/bark icon.png" alt="Bark" className="w-15 h-15" />
 
     </a>
   );
