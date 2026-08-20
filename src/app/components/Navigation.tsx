@@ -37,9 +37,9 @@ export function Navigation() {
             <button onClick={() => scrollToSection('services')} className="text-white hover:text-[#65A3F8] transition-colors" style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}>
               Services
             </button>
-            <button onClick={() => scrollToSection('portfolio')} className="text-white hover:text-[#65A3F8] transition-colors" style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}>
+            {/* <button onClick={() => scrollToSection('portfolio')} className="text-white hover:text-[#65A3F8] transition-colors" style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}>
               Portfolio
-            </button>
+            </button> */}
             <button onClick={() => scrollToSection('testimonials')} className="text-white hover:text-[#65A3F8] transition-colors" style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}>
               Testimonials
             </button>
