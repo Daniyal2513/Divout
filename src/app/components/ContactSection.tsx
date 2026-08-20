@@ -22,7 +22,8 @@ function BarkWidget() {
       data-image="medium-navy"
       data-version="3.0"
     >
-      Divout Production
+  <img src="/bark icon.png" alt="Bark" className="w-5 h-5" />
+
     </a>
   );
 }
