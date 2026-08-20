@@ -12,7 +12,7 @@ function BarkWidget() {
   }, []);
 
   return (
-    
+    <a
       href="https://www.bark.com/en/us/company/divout-production/J3lP0m/"
       target="_blank"
       rel="noopener noreferrer"
