@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
-import { Mail, Phone, MapPin, Send, Linkedin, Twitter, Instagram, Facebook } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Linkedin, Instagram, Facebook } from 'lucide-react';
+import { SiBehance, SiX, SiThreads } from 'react-icons/si';
 import { useState, useEffect } from 'react';
 function BarkWidget() {
   useEffect(() => {
@@ -245,6 +246,9 @@ export function ContactSection() {
                   { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/divout-production-971a66418/' },
                   { icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61590974293100' },
                   { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/divoutproduction/' },
+                  { icon: SiX, label: 'X', href: 'https://x.com/Divout_Prod' },
+                  { icon: SiThreads, label: 'Threads', href: 'https://www.threads.com/@divoutproduction' },
+                  { icon: SiBehance, label: 'Behance', href: 'https://www.behance.net/divoutproduction' }
                 ].map((social, i) => (
                   <a
                     key={i}
