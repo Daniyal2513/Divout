@@ -22,7 +22,7 @@ function BarkWidget() {
       data-image="medium-navy"
       data-version="3.0"
     >
-      <img src="/images/bark icon2.png" alt="Bark" className="w-10 h-10" />
+      <img src="/images/bark icon2.png" alt="Bark" className="w-11 h-11" />
 
     </a>
   );
