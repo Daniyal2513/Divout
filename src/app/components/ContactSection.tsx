@@ -22,7 +22,7 @@ function BarkWidget() {
       data-image="medium-navy"
       data-version="3.0"
     >
-  <img src="/images/bark icon.png" alt="Bark" className="w-10 h-10" />
+      <img src="/images/bark icon.png" alt="Bark" className="w-10 h-10" />
 
     </a>
   );
@@ -37,16 +37,16 @@ export function ContactSection() {
 
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const BarkIcon = ({ size = 20, className = "" }: { size?: number; className?: string }) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    className={className}
-  >
-    <img src="/images/bark icon.png" alt="Bark" className="w-15 h-15" />
-  </svg>
-);
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className={className}
+    >
+      <img src="/images/bark icon.png" alt="Bark" className="w-15 h-15" />
+    </svg>
+  );
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -261,43 +261,52 @@ export function ContactSection() {
                     />
                   </a>
                 ))}
-                    <BarkWidget />
+                <BarkWidget />
 
+              </div>
             </div>
+
+            <div className="bg-gradient-to-br from-[#65A3F8]/20 to-transparent border border-[#65A3F8]/30 rounded-2xl p-6 backdrop-blur-sm">
+              <h4 className="mb-3" style={{ fontFamily: 'var(--font-primary)', fontWeight: 700, fontSize: '1.25rem' }}>
+                Ready to Start?
+              </h4>
+              <p className="text-white/80 mb-4" style={{ fontFamily: 'var(--font-secondary)' }}>
+                Schedule a free consultation call with our team to discuss your project requirements and goals.
+              </p>
+              <button className="bg-white text-black px-6 py-3 rounded-full hover:bg-white/90 transition-all" style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}>
+                Book a Call
+              </button>
+            </div>
+          </motion.div>
         </div>
 
-        <div className="bg-gradient-to-br from-[#65A3F8]/20 to-transparent border border-[#65A3F8]/30 rounded-2xl p-6 backdrop-blur-sm">
-          <h4 className="mb-3" style={{ fontFamily: 'var(--font-primary)', fontWeight: 700, fontSize: '1.25rem' }}>
-            Ready to Start?
-          </h4>
-          <p className="text-white/80 mb-4" style={{ fontFamily: 'var(--font-secondary)' }}>
-            Schedule a free consultation call with our team to discuss your project requirements and goals.
-          </p>
-          <button className="bg-white text-black px-6 py-3 rounded-full hover:bg-white/90 transition-all" style={{ fontFamily: 'var(--font-primary)', fontWeight: 600 }}>
-            Book a Call
-          </button>
-        </div>
-      </motion.div>
-    </div>
-
-        {/* Footer */ }
-  <motion.div
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.8 }}
-    className="pt-12 border-t border-white/20 text-center"
-  >
-    <div className="text-3xl mb-4" style={{ fontFamily: 'var(--font-primary)', fontWeight: 900 }}>
+        {/* Footer */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="pt-12 border-t border-white/20 text-center"
+        >
+          {/* <div className="text-3xl mb-4" style={{ fontFamily: 'var(--font-primary)', fontWeight: 900 }}>
       DIVOUT
-    </div>
-    <p className="text-white/60 mb-4" style={{ fontFamily: 'var(--font-secondary)' }}>
-      Pioneering the future of digital innovation
-    </p>
-    <p className="text-white/40 text-sm" style={{ fontFamily: 'var(--font-secondary)' }}>
-      © 2026 DIVOUT. All rights reserved.
-    </p>
-  </motion.div>
+    </div> */}
+          <div className="flex items-center">
+            <a href="#" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+              <img
+                src="/images/WebLogo.png"
+                alt="Divout Logo"
+                className="h-10 w-auto cursor-pointer"
+              />
+            </a>
+          </div>
+          <p className="text-white/60 mb-4" style={{ fontFamily: 'var(--font-secondary)' }}>
+            Pioneering the future of digital innovation
+          </p>
+          <p className="text-white/40 text-sm" style={{ fontFamily: 'var(--font-secondary)' }}>
+            © 2026 DIVOUT. All rights reserved.
+          </p>
+        </motion.div>
       </div >
     </section >
   );
