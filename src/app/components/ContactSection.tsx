@@ -54,7 +54,7 @@ export function ContactSection() {
     setStatus('submitting');
 
     try {
-const response = await fetch('https://divout-78g6.vercel.app/api/contact', {
+const response = await fetch('https://backend-oq19me012-daniyals-projects-d98fb3f9.vercel.app/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
